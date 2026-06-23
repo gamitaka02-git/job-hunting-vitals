@@ -1,0 +1,51 @@
+# ============================================================
+# .gitignore（プロジェクト全体）
+# ============================================================
+# 役割: プロジェクト全体の機密ファイル・不要ファイルをGitリポジトリから除外する。
+# ============================================================
+
+# --- OS/システムファイル ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+cookies.txt
+
+# --- エディタ・IDE関連 ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- 環境変数・シークレット ---
+.env
+.env.*
+!.env.example
+
+# --- ログ・キャッシュファイル ---
+*.log
+error_log
+
+# --- 配布用ツール / 管理側 共通の機密情報 ---
+# (フォルダ名がツールごとに異なる場合も考慮して ** で指定)
+**/admin/config.php
+**/admin/database.sqlite
+**/admin/database.sqlite-shm
+**/admin/database.sqlite-wal
+**/admin/_tmp_update_*
+
+# --- ツール本体の除外 ---
+jobhuntingvitals/
+
+# --- 外部ライブラリ（Composer管理のもの） ---
+LP/admin/stripe-php/
+
+# --- 開発用ドキュメント ---
+*.pdf
+
+# --- システム/ドキュメント ---
+docs/
