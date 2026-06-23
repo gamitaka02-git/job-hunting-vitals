@@ -47,5 +47,9 @@ LP/admin/stripe-php/
 # --- 開発用ドキュメント ---
 *.pdf
 
+# --- 起動スクリプト ---
+start_mac.command
+start_windows.bat
+
 # --- システム/ドキュメント ---
 docs/
